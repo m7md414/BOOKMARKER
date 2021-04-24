@@ -1,0 +1,293 @@
+body{
+    margin: 0;
+    background-image: url("../imgs/lamp.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-family:"Work Sans", sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y:auto;
+    z-index: 10;
+}
+.over{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../imgs/lampOff.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y:auto;
+    z-index: 11;
+    opacity: 1;
+    transition: all ease-in-out 1s;
+}
+header .container-fluid{
+    margin-top: 35px;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+header .container-fluid .container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1.8s;
+    animation-play-state: paused;
+}
+header span{
+    font-size: 60px;
+    height: 90px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding-bottom: 8px;
+
+}
+header span:nth-child(1){
+    animation-name: color;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-delay: 0.5;
+    animation-play-state: paused;
+}
+header span:nth-child(2){
+    animation-name: color;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-delay: 0.8s;
+    animation-play-state: paused;
+}
+header span:nth-child(3){
+    animation-name: color;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-delay: 1.1s;
+    animation-play-state: paused;
+}
+header span:nth-child(4){
+    animation-name: color;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-delay: 1.4s;
+    animation-play-state: paused;
+}
+header span:nth-child(5){
+    animation-name: color;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-delay: 1.7s;
+    animation-play-state: paused;
+}
+header span:nth-child(6){
+    animation-name: color;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+    animation-play-state: paused;
+}
+header span:nth-child(7){
+    animation-name: color;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-delay: 2.3s;
+    animation-play-state: paused;
+}
+.content{
+    width: 100%;
+    height: 495px;
+    padding-left: 50px;
+}
+.content .row .left{
+    height: 215px;
+    flex-wrap: wrap;
+    background: linear-gradient(270deg, rgba(255,236,178,0.8911939775910365) 0%, rgba(255,236,178,0) 100%);
+    border-radius: 15px 15px 15px 15px;
+    text-align: center;
+}
+
+.content .row .left h1{
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: white;
+}
+.content .row .left .row:first-child{
+    background-color: black;
+    border-radius: 15px 15px 0 0;
+}
+.content .row .left h1 span{
+    color: rgb(135, 0, 0);
+}
+.content .row .left label{
+    font-size: 15px;
+    font-weight: bold;
+    font-family:sans-serif;
+    color: rgb(0, 0, 0);
+    float: left;
+    flex-wrap: nowrap;
+}
+.content .row .left label:hover{
+    color: rgb(135, 0, 0);
+}
+.content .row .left input{
+    position: relative;
+    right: 10px;
+    bottom: 2px;
+    height: 15px;
+    width: 100%;
+    font-size: 10px;
+    font-weight: 100;
+    font-family:sans-serif;
+    padding: 8px;
+    color: black;
+    border-radius: 8px;
+    border: 1px solid rgb(135, 0, 0);
+    border-right: transparent;
+    border-left: transparent;
+   
+    outline: none;
+}
+input:hover{
+    -webkit-box-shadow: 0px 1px 15px -2px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 1px 15px -2px rgba(0,0,0,0.35);
+    box-shadow: 0px 1px 15px -2px rgba(0,0,0,0.35);
+
+}
+.content .row .left .row .col-12{
+    display: flex;
+    justify-content: center;
+}
+.content .row .left .im{
+    height: 50px;
+    width: 50px;
+    margin-left: 15px;
+    cursor: pointer;
+    background-image: url("../imgs/logoOff.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all ease-in-out 0.5s;
+}
+.content .row .left .im:hover{
+    background-image: url("../imgs/logoOn.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1.1)
+}
+.content .row .left .row:not(:first-child){
+    margin-top: 15px;
+}
+
+.content .row .right{
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.switch{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    height: 50px;
+    width: 140px;
+    border-radius: 50px;
+    z-index: 20;
+    background-color: #35373a;
+}
+.switch .on{
+    position: relative;
+    top: 8px;
+    left: 0px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #038626;
+    height: 100%;
+    width: 40px;
+    border-radius: 50px 0 0 50px;
+}
+.switch .off{
+    position: relative;
+    top: 8px;
+    left: -4px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #af0f00;
+    width: 40px;
+    height: 100%;
+    border-radius: 0px 50px 50px 0px;
+}
+.switch .botn{
+    position: relative;
+    top: -52px;
+    left: 35px;
+    height: 81px;
+    width: 121px;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+.data{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 700px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.589);
+    border: 1px solid black;
+}
+.anc{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+}
+@keyframes color {
+    0%{
+        color: transparent;
+    }
+    100%{
+        color: white;
+    }
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0.1deg);
+    }
+    20%{
+        transform: rotate(0.3deg);
+    }
+    40%{
+        transform: rotate(0.6deg);
+    }
+    60%{
+        transform: rotate(0.3deg);
+    }
+    80%{
+        transform: rotate(0.1deg);
+    }   
+    100%{
+        transform: rotate(0deg);
+    }
+}
